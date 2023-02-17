@@ -1,0 +1,370 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+.my-container{
+    margin: 0 auto;
+    width: 92%;
+}
+
+body{
+    background-color: #353544;
+    font-family: 'Poppins';
+    
+}
+/* header {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../images/banniereAcceuil.png);
+    background-size: cover;
+} */
+code {
+    /* font-size: 3em; */
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 2em;
+}
+
+.p-balise {
+    color: #E60872;
+}
+
+
+/* --------------------------- NAVBAR -------------------------*/
+
+.my-navbar {
+    position: absolute;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+    z-index: 9000;
+    top: 0;
+    position: fixed;
+    /* border-bottom: 1px solid #18181f; */
+    background-color: #1b1b234f;
+}
+
+.my-navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.titre-navbar {
+    font-size: 1.9em;
+}
+
+.logo {
+    font-size: 2em;
+    font-weight: bold;
+    margin-left: .2em;
+}
+
+.my-navbar .nav-links ul {
+    display: flex;
+}
+
+.my-navbar .nav-links ul li{
+    margin: 0 25px;
+    font-size: 1.4em;
+}
+
+.my-navbar .nav-links ul li.active a{
+    color: #F8C000;
+    font-weight: 600;
+}
+
+.my-navbar .menu-hamburger {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 30px;
+    width: 45px;
+}
+
+/*--------------------------------BANNIERE-------------------*/
+.banniere {
+    position: relative;
+}
+.banniere-image {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    position: relative;
+
+    width: 100%;
+    
+}
+.banniere hr {
+    position: absolute;
+    top: 20%;
+    color: white;
+    height: 7px;
+    background-color: white;
+    width: 150px;
+}
+.banniere-titre {
+    position: absolute;
+    left: 0%;
+    top: 10%;
+    font-size: 5em;
+    text-align: left;
+    font-weight: bold;
+    color: white;
+}
+
+.banniere-sousTitre{
+    position: absolute;
+    left: 0%;
+    top: 50%;
+    font-size: 2.5em;
+    text-align: left;
+    color: white;
+}
+
+.banniere .qui-suis-je {
+    position: absolute;
+    left: 75%;
+    top: 25%;
+    font-size: 1.2em;
+    text-align: left;
+    color: white;
+}
+
+.banniere .qui-suis-je h3 {
+    margin-bottom: .5em;
+}
+
+.banniere .dernier-projet h3{
+    margin-bottom: .5em;
+}
+
+.banniere .qui-suis-je p code{
+    font-size: 1.3em;
+}
+
+.banniere .dernier-projet p code {
+    font-size: 1.3em;
+}
+
+.banniere .qui-suis-je p{
+    margin-bottom: 1em;
+}
+
+.banniere .dernier-projet p {
+    margin-bottom: 1em;
+}
+
+.banniere .qui-suis-je a {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.banniere .dernier-projet a{
+    color: white;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.banniere .dernier-projet {
+    position: absolute;
+    left: 75%;
+    top: 48%;
+    font-size: 1.2em;
+    text-align: left;
+    color: white;
+}
+
+.banniere .retrouvez-moi {
+    position: absolute;
+    left: 75%;
+    top: 82%;
+    font-size: 1.2em;
+    text-align: left;
+    color: white;
+}
+
+.banniere .retrouvez-moi a {
+    color: #F8C000;
+    font-size: 1.5em;
+    margin-right: .3em;
+}
+
+.banniere .retrouvez-moi .cv {
+    font-weight: bold;
+}
+
+
+/*------------------------PORTFOLIO-----------------*/
+.h1-balise {
+    font-size: 1.5em;
+    color:#E60872;
+}
+
+.h1-chevron {
+    font-size: 1.5em;
+}
+
+.my-row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.portfolio h1 {
+    color: white;
+    font-size: 4em;
+    margin: 2em;
+}
+
+.portfolio .projet{
+    background-color: #23232E;
+    border-radius: 25px;
+    /* padding: 4em 0 6em 0; */
+    margin-bottom: 4em;
+}
+
+.portfolio {
+    margin-top: 4em;
+    position: relative;
+}
+
+.portfolio img {
+    width: 40em;
+    height: auto;
+}
+
+.portfolio h3 {
+    color: white;
+    text-align: center;
+    padding-top: .5em;
+    margin: .5em;
+}
+
+.portfolio p {
+    color: white;
+    text-align: center;
+    padding: .5em 0 1em 0;
+}
+
+.portfolio .titre-portfolio {
+    margin-top: 4em;
+}
+
+
+
+
+/*----------------------PROJETS---------------------*/
+
+.projets {
+    margin-top: 20em;
+}
+.projets img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+/*-----------------------MEDIA QUERY----------------*/
+
+@media screen and (max-width: 900px) {
+    .my-navbar {
+        padding: 0;
+    }
+    .my-navbar .logo {
+        position: absolute;
+        top: 40px;
+        left: 30px;
+    }
+    .my-navbar .menu-hamburger {
+        display: block;
+    }
+    .my-navbar .nav-links {
+        top: 0;
+        left: 0;
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.105);
+        backdrop-filter: blur(50px);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -100%;
+        transition: all 0.5s ease;
+    }
+
+    .my-navbar .mobile-menu {
+        margin-left: 0;
+    }
+
+    body .nav-links ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .my-navbar .nav-links ul li {
+        margin: 25px 0;
+        font-size: 1.2em;
+    }
+    .banniere-image {
+        background-position: center;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .banniere-titre {
+        position: absolute;
+        left: 3%;
+        top: 80%;
+        font-size: 2.5em;
+        text-align: left;
+        font-weight: bold;
+        color: white;
+    }
+    
+    .banniere-sousTitre{
+        position: absolute;
+        left: 3%;
+        top: 125%;
+        font-size: 1em;
+        text-align: left;
+        color: white;
+    }
+
+    
+    
+}
+
+@media screen and (max-width: 760px) {
+    .banniere-titre {
+        position: absolute;
+        left: 3%;
+        top: 80%;
+        font-size: 2em;
+        text-align: left;
+        font-weight: bold;
+        color: white;
+    }
+    
+    .banniere-sousTitre{
+        position: absolute;
+        left: 3%;
+        top: 115%;
+        font-size: 1em;
+        text-align: left;
+        color: white;
+        margin-top: 3.2em;
+    }
+    
+}

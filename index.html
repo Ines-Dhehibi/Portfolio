@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/45e38e596f.js" crossorigin="anonymous"></script>
+    <title>Inès Gadria Dhehibi</title>
+</head>
+<body>
+    
+    <nav class="my-navbar">
+        <a href="index.html" class="logo">INES</a>
+        <div class="nav-links">
+            <ul>
+                <li class="active"><a href="index.html">Accueil</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.asp">Qui suis-je?</a></li>
+                <li><a href="about.asp">Contactez-moi!</a></li>
+            </ul>
+        </div>
+        <img  src="images/menu.png" alt="menu hamburger" class="menu-hamburger" >
+    </nav>
+
+    <div class="banniere my-container">
+       <img src="images/banniereAcceuil.png" alt="banniere image" class="banniere-image">
+        <hr>
+        <h1 class="banniere-titre">Je suis Inès, une <br>Développeuse Web</h1>
+        <p class="banniere-sousTitre"><code>&lt;</code><code class="p-balise">p</code><code>&gt;</code> 
+        Bienvenue sur mon Portfolio en <br>ligne que j'ai entierement codé
+        <code>&lt;/</code><code class="p-balise">p</code><code>&gt;</code> 
+        </p>
+        <div class="qui-suis-je">
+            <h3>Qui suis-je ?</h3>
+            <p class=""><code>&lt;</code><code class="p-balise">p</code><code>&gt;</code> 
+                Je suis Inès, étudiante en développement web. J'ai 21 ans et j'aime créer des nouveaux visuels quand je ne code pas...
+                <code>&lt;/</code><code class="p-balise">p</code><code>&gt;</code> 
+            </p>
+            <a href="#">Lire la suite </a><i class="fa fa-arrow-right"></i>
+        </div>
+
+        <div class="dernier-projet">
+            <h3>Dernier Projet</h3>
+            <p class=""><code>&lt;</code><code class="p-balise">p</code><code>&gt;</code> 
+                Ce projet est la reproduction d'un site <br> e-commerce de salon de coiffure HairCut...
+                <code>&lt;/</code><code class="p-balise">p</code><code>&gt;</code> 
+            </p>
+            <a href="#">Lire la suite </a><i class="fa fa-arrow-right"></i>
+        </div>
+
+        <div class="retrouvez-moi">
+            <h3>Retrouvez-moi</h3>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-github"></i></a>
+            <a href="#" class="cv">CV</a>
+        </div>
+
+
+    </div>
+
+    <div class="portfolio">
+        <h1><code class="h1-chevron">&lt;</code><code class="h1-balise">h1</code><code class="h1-chevron">&gt;</code>Mes Projets<code class="h1-chevron">&lt;/</code><code class="h1-balise">h1</code><code class="h1-chevron">&gt;</code></h1>
+        <div class="my-row">
+            <div class="gauche">
+                <div class="projet">
+                    <h3>HairCut</h3>
+                    <a href="https://ines-dhehibi.github.io/Haircut/"><img src="images/site-acceuil/1.png" alt="projet 1"></a>
+                    <p>Langages & Techniques utilisés:<br> HTML/CSS, Flexbox</p>
+
+                </div>
+
+                <div class="projet">
+                    <h3>WF3 Sports</h3>
+                    <a href="https://ines-dhehibi.github.io/wf3-sports/"><img src="images/site-acceuil/3.png" alt="projet 1"></a>
+                    <p>Langages & Techniques utilisés:<br> HTML/CSS, Grilles (12)</p>
+                </div>
+
+                <div class="projet">
+                    <h3>CV</h3>
+                    <a href="projets/cv.html"><img src="images/site-acceuil/5.png" alt="projet 1"></a>
+                    <p>Langages & Techniques utilisés:<br> HTML/CSS</p>
+                </div>
+                
+            </div>
+            <div class="droite">
+                <div class="projet">
+                    <h3>MultiShop</h3>
+                    <a href="https://ines-dhehibi.github.io/multishoop/"><img src="images/site-acceuil/2.png" alt="projet 2"></a>
+                    <p>Langages & Techniques utilisés:<br> HTML/CSS, Grilles (12)</p>
+                </div>
+                
+                <div class="projet">
+                    <h3>We Build</h3>
+                    <a href="projets/webuild.html"><img src="images/site-acceuil/4.png" alt="projet 2"></a>
+                    <p>Langages & Techniques utilisés:<br> HTML/CSS, Bootstrap - grilles</p>
+                </div>
+
+                <div class="projet">
+                    <h3>Maquette UxDesign</h3>
+                    <a href="projets/maquette-multishop-uxdesign.html"><img src="images/site-acceuil/6.png" alt="projet 2"></a>
+                    <p>Logiciel utilisés:<br> Balsamiq Wireframes</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="my-container">
+        <h1><code></code><code class="p-balise">p</code><code>Inès Gadria Dhehibi&lt;\</code><code class="p-balise">p</code><code>&gt;</code></h1>
+    </div> -->
+    
+</body>
+    <script>
+        const menuHamburger = document.querySelector(".menu-hamburger")
+        const navLinks = document.querySelector(".nav-links")
+
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+        })
+    </script>
+</html>
