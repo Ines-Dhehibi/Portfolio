@@ -273,6 +273,57 @@ h1 {
 }
 
 
+/*--------------------MAQUETTE----------------------*/
+
+.maquette {
+    margin: 0 auto;
+    width: 75%;
+    margin-top: 15rem;
+}
+
+.maquette h1 {
+    color: white;
+    font-size: 2.5em;
+}
+.maquette p {
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+}
+.maquette code {
+    font-size: 1.4em;
+}
+.maquette img {
+    margin-top: 2em;
+}
+
+
+/*-----------------------CV-------------------------*/
+
+.mon_cv {
+    background-color: #23232E;
+}
+
+.cv img {
+    border-radius: 5em;
+}
+
+/*-----------------------QUI-SUIS-JE?---------------*/
+
+.qui-suis-je h1{
+    color: white;
+    font-size: 4em;
+    margin: 2em;
+}
+
+.presentation p{
+    color: white;
+}
+
+.presentation code {
+    font-size: 1.3em;
+    background-color:#23232E;
+}
 
 /*-----------------------MEDIA QUERY----------------*/
 
