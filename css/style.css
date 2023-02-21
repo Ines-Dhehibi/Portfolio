@@ -39,7 +39,7 @@ h1 {
 
 .my-navbar {
     position: absolute;
-    padding: 50px;
+    padding: .8em;
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -219,6 +219,11 @@ h1 {
     justify-content: space-around;
 }
 
+.my-row-contact {
+    display: flex;
+    justify-content: space-between;
+}
+
 .portfolio h1 {
     color: white;
     font-size: 4em;
@@ -272,6 +277,9 @@ h1 {
     height: auto;
 }
 
+.projet {
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
 
 /*--------------------MAQUETTE----------------------*/
 
@@ -314,6 +322,7 @@ h1 {
     color: white;
     font-size: 4em;
     margin: 2em;
+    margin-left: 8.5em;
 }
 
 .presentation p{
@@ -322,11 +331,113 @@ h1 {
 
 .presentation code {
     font-size: 1.3em;
-    background-color:#23232E;
 }
+
+.qsj {
+    height: 100vh;
+    width: auto;
+    background: url(../images/qsj-background.png) center top;
+    background-size: cover;
+}
+
+.presentation p{
+    margin-left: 30em;
+}
+
+.my-containerr {
+    margin: 0 auto;
+    width: 75%;
+}
+
+
+/*----------------------CONTACTEZ-MOI---------------*/
+
+.container-contact {
+    margin: 0 auto;
+    width: 23%;
+}
+.carte-visite {
+    background-color:#23232E;
+    border-radius: 20px;
+    padding: 1em .5em 0 1em ;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.carte-visite h2 {
+    text-transform: uppercase;
+    color:#F8C000;
+}
+
+.carte-visite h3 {
+    text-transform: uppercase;
+}
+
+.contact h1 {
+    margin-bottom: 2em;
+}
+
+.my-netflix {
+    margin-bottom: 2em;
+}
+
+
+/*-----------------------FOOTER----------------------*/
+
+footer {
+    background-color: #23232E;
+    color: white;
+}
+footer .btn-smooth {
+    color: var(--orange);
+
+}
+footer .btn-smooth i {
+    color: var(--orange);
+    font-size: 2em;
+}
+
+footer .retrouvez-moi {
+    font-size: 1.2em;
+    text-align: left;
+    color: white;
+}
+
+footer .retrouvez-moi a {
+    color: #F8C000;
+    font-size: 1.5em;
+    margin-right: .3em;
+}
+
 
 /*-----------------------MEDIA QUERY----------------*/
 
+
+@media screen and (max-width: 1650px) {
+
+    .qsj {
+        height: 100vh;
+        width: auto;
+        background:#23232E;
+        
+    }
+    .my-containerr {
+        width: 92%;
+        margin: 0 auto;
+    }
+
+    .presentation p{
+        margin-left: 0em;
+        padding-bottom: 1em;
+    }
+
+    .qui-suis-je h1{
+        color: white;
+        font-size: 1em;
+        margin: 1em;
+        margin-left: 0em;
+    }
+}
 @media screen and (max-width: 900px) {
     .my-navbar {
         padding: 0;
@@ -393,7 +504,7 @@ h1 {
         color: white;
     }
 
-    
+
     
 }
 

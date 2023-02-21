@@ -20,7 +20,7 @@
                 <li class="active"><a href="../index.html">Accueil</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
                 <li><a href="qui-suis-je.html">Qui suis-je?</a></li>
-                <li><a href="about.asp">Contactez-moi!</a></li>
+                <li><a href="contactez-moi.html">Contactez-moi!</a></li>
             </ul>
         </div>
         <img  src="../images/menu.png" alt="menu hamburger" class="menu-hamburger" >
@@ -38,4 +38,13 @@
     
     
 </body>
+
+    <script>
+        const menuHamburger = document.querySelector(".menu-hamburger")
+        const navLinks = document.querySelector(".nav-links")
+
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+        })
+    </script>
 </html>
